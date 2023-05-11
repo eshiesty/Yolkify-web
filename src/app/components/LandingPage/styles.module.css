@@ -2,6 +2,7 @@
   flex: 1;
   flex-direction: row;
   display: flex;
+  /* min-width: 1800px; */
 }
 .titleHolder {
   margin-left: 72px;
@@ -54,6 +55,7 @@
   width: 45vw;
   align-self: flex-end;
   justify-items: flex-end;
+  min-width: 800px;
   /* background-color: red; */
 }
 
