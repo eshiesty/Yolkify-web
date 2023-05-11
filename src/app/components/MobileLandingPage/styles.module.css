@@ -1,0 +1,72 @@
+.page {
+  flex: 1;
+  flex-direction: row;
+  display: flex;
+  /* min-width: 1800px; */
+}
+.titleHolder {
+  margin-left: 72px;
+  margin-top: 100px;
+  flex-direction: row;
+
+  width: fit-content;
+}
+.maintext {
+  font-size: 18pt;
+  font-weight: bold;
+}
+.emphasis {
+  font-size: 18pt;
+  font-weight: bold;
+
+  color: #e2a747;
+}
+.linkHolder {
+  width: 30vw;
+  flex-direction: row;
+  display: flex;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  justify-content: space-between;
+}
+.link {
+  cursor: pointer;
+  color: gray;
+}
+.screenshotArea {
+  flex: 1;
+  justify-content: flex-end;
+  height: 100vh;
+
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+
+  /* background-color: orange; */
+  margin-right: 120px;
+  justify-content: space-evenly;
+  /* width: fit-content; */
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+}
+.screenshots {
+  flex-direction: row;
+  width: 45vw;
+  align-self: flex-end;
+  justify-items: flex-end;
+  min-width: 800px;
+  /* background-color: red; */
+}
+
+.storeIcons {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+  /* background-color: #e2a747; */
+}
+.screenshotContainer {
+  /* width: 250px;
+    height: 250px; */
+}
