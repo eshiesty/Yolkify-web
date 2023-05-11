@@ -1,25 +1,13 @@
 {
   "applinks": {
+    "apps": [],
     "details": [
       {
-        "appIDs": [
-          "org.reactjs.native.example.Yolkify"
-        ],
+        "appID": "<TeamID>.com.example.myapp",
         "paths": [
           "/ResetPasswordScreen"
-        ],
-        "components": [
-          {
-            "/": "/ResetPasswordScreen/*",
-            "comment": "Matches any URL with a path that starts with /ResetPasswordScreen/."
-          }
         ]
       }
-    ]
-  },
-  "webcredentials": {
-    "apps": [
-      "org.reactjs.native.example.Yolkify"
     ]
   }
 }
