@@ -3,7 +3,7 @@
     "apps": [],
     "details": [
       {
-        "appID": "<TeamID>.com.example.myapp",
+        "appID": "org.reactjs.native.example.Yolkify",
         "paths": [
           "/ResetPasswordScreen"
         ]
