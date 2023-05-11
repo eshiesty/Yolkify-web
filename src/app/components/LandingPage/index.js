@@ -16,19 +16,15 @@ const LandingPage = () => {
           <div className={styles.titleHolderMobile}>
             <text className={styles.maintextMobile}>
               It's time to get
-              <text className={styles.emphasisMobile}>
-                <br />
-                yolked
-              </text>
-              .
+              <text className={styles.emphasisMobile}> yolked</text>.
             </text>
           </div>
           <div className={styles.screenshotAreaMobile}>
             <div className={styles.screenshotsMobile}>
-              <Image src={iosdashboard} width={250} alt="yolkify dashboard" />
-              {/* <Image src={iosactive} width={250} alt="yolkify workout" /> */}
+              <Image src={iosdashboard} width={180} alt="yolkify dashboard" />
+              <Image src={iosactive} width={180} alt="yolkify workout" />
 
-              {/* <Image src={iosprs} width={250} alt="yolkify prs" /> */}
+              {/* <Image src={iosprs} width={150} alt="yolkify prs" /> */}
             </div>
             <div className={styles.storeIconsMobile}>
               <Image src={appstore} width={150} alt="app store icon" />
