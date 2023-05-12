@@ -5,7 +5,7 @@
       {
         "appID": "org.reactjs.native.example.Yolkify",
         "paths": [
-          "/ResetPasswordScreen"
+          "*"
         ]
       }
     ]
