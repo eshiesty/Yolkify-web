@@ -1,5 +1,5 @@
-"use client";
-import styles from "./styles.module.css";
+import styles from "./landing.module.css";
+import Link from "next/link";
 import appstore from "../../assets/appstore.png";
 import googleplay from "../../assets/googleplay.png";
 import iosdashboard from "../../assets/screenshots/iosdash.png";
@@ -37,7 +37,9 @@ const LandingPage = () => {
           <div className={styles.linkHolderMobile}>
             <div className={styles.linkMobile}>about</div>
             <div className={styles.linkMobile}>contact</div>
-            <div className={styles.linkMobile}>legal</div>
+            <Link className={styles.linkMobile} href={"/legal"}>
+              legal
+            </Link>
             <div className={styles.linkMobile}>help</div>
           </div>
         </div>
@@ -71,7 +73,9 @@ const LandingPage = () => {
           <div className={styles.linkHolder}>
             <div className={styles.link}>about</div>
             <div className={styles.link}>contact</div>
-            <div className={styles.link}>legal</div>
+            <Link className={styles.link} href={"/legal"}>
+              legal
+            </Link>
             <div className={styles.link}>help</div>
           </div>
         </div>

@@ -1,0 +1,18 @@
+.headerHolder {
+  justify-content: center;
+  /* display: flex; */
+  /* flex: 1; */
+  align-self: center;
+  max-width: 60vw;
+  background-color: red;
+}
+.header {
+  font-size: 60pt;
+  background-color: pink;
+  justify-self: center;
+  align-self: center;
+}
+.page {
+  flex: 1;
+  display: flex;
+}
