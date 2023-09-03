@@ -1,7 +1,7 @@
 "use client";
 import styles from "./styles.module.css";
 
-import useDeviceDetect from "../../utils";
+import useDeviceDetect from "../../app/utils";
 
 const PageNotFound = () => {
   return (
