@@ -63,8 +63,12 @@ const LandingPage = () => {
               <Image src={iosprs} width={250} alt="yolkify prs" />
             </div>
             <div className={styles.storeIcons}>
-              <Image src={appstore} width={200} alt="app store icon" />
-              <Image width={200} src={googleplay} alt="play store icon" />
+              <Link href={"https://apps.apple.com/us/app/yolkify/id6447922223"}>
+                <Image src={appstore} width={200} alt="app store icon" />
+              </Link>
+              <Link href="https://play.google.com/store/apps/details?id=com.yolkify">
+                <Image width={200} src={googleplay} alt="play store icon" />
+              </Link>
             </div>
             {/* <div className={styles.androidArea}>
         <Image src={graphs} width={270} alt="yolkify charts" />
