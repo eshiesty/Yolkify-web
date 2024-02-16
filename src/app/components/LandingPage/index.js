@@ -3,11 +3,11 @@ import Link from "next/link";
 import appstore from "../../assets/appstore.png";
 import googleplay from "../../assets/googleplay.png";
 import iosdashboard from "../../assets/screenshots/iosdash.png";
-import iosactive from "../../assets/screenshots/iosactive.png";
+import iossocial from "../../assets/screenshots/iossocial.png";
+import iosprofile from "../../assets/screenshots/iosprofile.png";
 import iosprs from "../../assets/screenshots/iosprs.png";
 import Image from "next/image";
 import useDeviceDetect from "../../utils";
-
 const LandingPage = () => {
   return (
     <div>
@@ -22,9 +22,8 @@ const LandingPage = () => {
           <div className={styles.screenshotAreaMobile}>
             <div className={styles.screenshotsMobile}>
               <Image src={iosdashboard} width={180} alt="yolkify dashboard" />
-              <Image src={iosactive} width={180} alt="yolkify workout" />
-
-              {/* <Image src={iosprs} width={150} alt="yolkify prs" /> */}
+              <Image src={iossocial} width={180} alt="yolkify social" />
+              <Image src={iosprofile} width={150} alt="yolkify profile" />
             </div>
             <div className={styles.storeIconsMobile}>
               <Image src={appstore} width={150} alt="app store icon" />
@@ -57,17 +56,28 @@ const LandingPage = () => {
           </div>
           <div className={styles.screenshotArea}>
             <div className={styles.screenshots}>
-              <Image src={iosdashboard} width={250} alt="yolkify dashboard" />
-              <Image src={iosactive} width={250} alt="yolkify workout" />
-
-              <Image src={iosprs} width={250} alt="yolkify prs" />
+              <Image
+                src={iosdashboard}
+                quality={100}
+                unoptimized={true}
+                width={250}
+                alt="yolkify dashboard"
+              />
+              <Image src={iosprofile} quality={100}
+                unoptimized={true}
+                width={250} alt="yolkify workout" />
+              <Image src={iossocial} quality={100}
+                unoptimized={true}
+                width={250} alt="yolkify prs" />
             </div>
             <div className={styles.storeIcons}>
               <Link href={"https://apps.apple.com/us/app/yolkify/id6447922223"}>
-                <Image src={appstore} width={200} alt="app store icon" />
+                <Image src={appstore} width={200} quality={100}
+                unoptimized={true}alt="app store icon" />
               </Link>
               <Link href="https://play.google.com/store/apps/details?id=com.yolkify">
-                <Image width={200} src={googleplay} alt="play store icon" />
+                <Image width={200} src={googleplay}quality={100}
+                unoptimized={true} alt="play store icon" />
               </Link>
             </div>
             {/* <div className={styles.androidArea}>
