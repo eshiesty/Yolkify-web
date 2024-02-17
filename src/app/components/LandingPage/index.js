@@ -5,78 +5,56 @@ import googleplay from "../../assets/googleplay.png";
 import iosdashboard from "../../assets/screenshots/iosdash.png";
 import iossocial from "../../assets/screenshots/iossocial.png";
 import iosprofile from "../../assets/screenshots/iosprofile.png";
+import textLogo from "../../assets/textlogo.png";
 import iosprs from "../../assets/screenshots/iosprs.png";
 import Image from "next/image";
 import useDeviceDetect from "../../utils";
 const LandingPage = () => {
   return (
-    <div>
-      {useDeviceDetect().isMobile ? (
-        <div className={styles.pageMobile}>
-          <div className={styles.titleHolderMobile}>
-            <text className={styles.maintextMobile}>
-              It's time to get
-              <text className={styles.emphasisMobile}> yolked</text>.
-            </text>
-          </div>
-          <div className={styles.screenshotAreaMobile}>
-            <div className={styles.screenshotsMobile}>
-              <Image src={iosdashboard} width={180} alt="yolkify dashboard" />
-              <Image src={iossocial} width={180} alt="yolkify social" />
-              <Image src={iosprofile} width={150} alt="yolkify profile" />
-            </div>
-            <div className={styles.storeIconsMobile}>
-              <Image src={appstore} width={150} alt="app store icon" />
-              <Image width={150} src={googleplay} alt="play store icon" />
-            </div>
-            {/* <div className={styles.androidArea}>
-      <Image src={graphs} width={270} alt="yolkify charts" />
-    </div> */}
-          </div>
-          <div className={styles.linkHolderMobile}>
-            <div className={styles.linkMobile}>about</div>
-            <div className={styles.linkMobile}>contact</div>
-            <Link className={styles.linkMobile} href={"/legal"}>
-              legal
-            </Link>
-            <div className={styles.linkMobile}>help</div>
-          </div>
-        </div>
-      ) : (
-        <div className={styles.page}>
+    <div className={styles.page}>
           <div className={styles.titleHolder}>
             <text className={styles.maintext}>
               It's time to get
               <text className={styles.emphasis}>
-                <br />
+                <br className={styles.break}/>
+                <text> </text>
                 yolked
               </text>
               .
             </text>
           </div>
+             
           <div className={styles.screenshotArea}>
+          <Image
+          className={styles.namelogo}
+                src={textLogo}
+                quality={100}
+                unoptimized={true}
+                width={250}
+                alt="yolkify name and logo"
+              />
             <div className={styles.screenshots}>
               <Image
                 src={iosdashboard}
                 quality={100}
                 unoptimized={true}
-                width={250}
+                className={styles.screenshot}
                 alt="yolkify dashboard"
               />
               <Image src={iosprofile} quality={100}
                 unoptimized={true}
-                width={250} alt="yolkify workout" />
+                className={styles.screenshot} alt="yolkify profile" />
               <Image src={iossocial} quality={100}
                 unoptimized={true}
-                width={250} alt="yolkify prs" />
+                className={styles.thirdPic} alt="yolkify social" />
             </div>
             <div className={styles.storeIcons}>
               <Link href={"https://apps.apple.com/us/app/yolkify/id6447922223"}>
-                <Image src={appstore} width={200} quality={100}
+                <Image src={appstore} className={styles.storeIcon} quality={100}
                 unoptimized={true}alt="app store icon" />
               </Link>
               <Link href="https://play.google.com/store/apps/details?id=com.yolkify">
-                <Image width={200} src={googleplay}quality={100}
+                <Image className={styles.storeIcon} src={googleplay}quality={100}
                 unoptimized={true} alt="play store icon" />
               </Link>
             </div>
@@ -92,8 +70,7 @@ const LandingPage = () => {
             </Link>
             <div className={styles.link}>help</div>
           </div>
-        </div>
-      )}
+
     </div>
   );
 };
