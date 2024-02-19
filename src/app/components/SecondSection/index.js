@@ -19,12 +19,8 @@ const SecondSection = () => {
           // other data to be sent in the request
         }
       );
-      console.log("res");
-      console.log(response.data);
       setCount(response.data);
-    } catch (error) {
-      console.error(error);
-    }
+    } catch (error) {}
   };
 
   postData();

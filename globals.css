@@ -16,10 +16,11 @@ html {
   background-repeat: no-repeat; */
   width: 100vw;
 }
-/* body {
-  color: rgb(var(--foreground-rgb));
-  height: 100vh;
-} */
+body {
+  /* color: rgb(var(--foreground-rgb));
+  height: 100vh; */
+  margin: 0px;
+}
 
 /* @keyframes gradient {
   0% {
