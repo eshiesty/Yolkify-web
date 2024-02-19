@@ -4,15 +4,24 @@
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
   background-color: #191919;
   color-scheme: dark;
+  overflow-x: hidden;
 }
 html {
+  /* background: radial-gradient(
+    circle at 85% center,
+    #202020,
+    #262626 50%,
+    #0e0e0e 100%
+  );
+  background-repeat: no-repeat; */
+  width: 100vw;
 }
 /* body {
   color: rgb(var(--foreground-rgb));
   height: 100vh;
 } */
 
-@keyframes gradient {
+/* @keyframes gradient {
   0% {
     background-position: 0% 50%;
   }
@@ -22,7 +31,7 @@ html {
   100% {
     background-position: 0% 50%;
   }
-}
+} */
 
 a {
   color: inherit;

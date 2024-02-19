@@ -1,0 +1,24 @@
+.linkHolder {
+    width: 30vw;
+    flex-direction: row;
+    display: flex;
+    /* position: absolute; */
+    margin: 50px;
+    justify-content: space-between;
+  }
+  .link {
+    cursor: pointer;
+    color: gray;
+  }
+  @media (max-width: 768px) {
+  
+    .linkHolder {
+      align-self: center;
+      width: 90%;
+      bottom: 10px;
+      margin:0px;
+      left: 50%;
+    transform: translate(-50%, 0);
+      text-align: center;
+    }
+}

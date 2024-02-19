@@ -1,0 +1,67 @@
+.screen-height {
+  /* height: 100vh; */
+  padding-bottom: 100px;
+  width: 100vw;
+  background-color: #282828;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
+.current-count {
+  color: #e2a747;
+  background-color: #202020;
+  border-radius: 5px;
+  padding: 5px;
+  /* text-shadow: 0 0 2px #e2a747, 0 0 1px #e2a747; */
+}
+.pg2-header-holder {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+.content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card {
+  border: 2px solid #e2a747;
+  background-color: #202020;
+  /* padding: 20px; */
+  border-radius: 30px;
+  margin: 10px;
+  display: flex;
+  width: 400px;
+  padding: 10px;
+}
+.card-text-holder {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  align-items: center;
+  /* text-align: center; */
+}
+.text-container {
+  width: 45%;
+  justify-content: center;
+}
+
+.image-container {
+  /* width: 45%; */
+}
+
+.screenshot {
+  width: 200px;
+  height: auto;
+}
+.gold {
+  color: #e2a747;
+}
+.main-point {
+  /* font-weight: normal; */
+}
+.description {
+  font-size: 10pt;
+  letter-spacing: 0.4px;
+}
