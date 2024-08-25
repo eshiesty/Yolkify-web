@@ -43,7 +43,7 @@ const LandingPage = () => {
             src={textLogo}
             quality={100}
             unoptimized={true}
-            width={250}
+            width={300}
             alt="yolkify name and logo"
           />
           <div className={styles.screenshots}>

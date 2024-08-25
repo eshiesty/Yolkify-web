@@ -14,6 +14,7 @@
   padding: 5px;
   /* text-shadow: 0 0 2px #e2a747, 0 0 1px #e2a747; */
 }
+
 .pg2-header-holder {
   display: flex;
   justify-content: center;
@@ -35,6 +36,7 @@
   width: 400px;
   padding: 10px;
 }
+
 .card-text-holder {
   display: flex;
   flex-direction: column;
