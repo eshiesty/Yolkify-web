@@ -5,8 +5,6 @@ const Footer = () => {
   return (
     <div>
       <div className={styles.linkHolder}>
-        <div className={styles.link}>about</div>
-        <div className={styles.link}>contact</div>
         <Link className={styles.link} href={"/legal"}>
           legal
         </Link>
