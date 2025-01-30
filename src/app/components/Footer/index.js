@@ -11,6 +11,9 @@ const Footer = () => {
           legal
         </Link>
         <div className={styles.link}>help</div>
+        <Link className={styles.link} href={"https://www.scrambletech.dev"}>
+          © 2025 Scramble Tech LLC
+        </Link>
       </div>
     </div>
   );
